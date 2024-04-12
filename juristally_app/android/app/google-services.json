@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "892798563101",
+    "firebase_url": "https://new-juristally.firebaseio.com",
+    "project_id": "new-juristally",
+    "storage_bucket": "new-juristally.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892798563101:android:cb395ca4f9b37d8890e7f4",
+        "android_client_info": {
+          "package_name": "com.jurist_ally"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892798563101-027gi0g5r8kgimfk2uqfv2sbep008hhe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jurist_ally",
+            "certificate_hash": "d5c2bfb7e0235bf6cef86f4103eaef2f8d9bf14d"
+          }
+        },
+        {
+          "client_id": "892798563101-mma8aai5u8pp5rodpmmk169q6mkke00f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jurist_ally",
+            "certificate_hash": "c5f35c993edc82cf03189aeb0b5456f155289f2b"
+          }
+        },
+        {
+          "client_id": "892798563101-pphgmjgbctollis2himgrnp6to9b2kjj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANfAU9R1WvNGVwg_zZYUcuGGms5GjvvaY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "892798563101-pphgmjgbctollis2himgrnp6to9b2kjj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
