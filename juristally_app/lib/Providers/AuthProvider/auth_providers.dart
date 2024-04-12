@@ -287,7 +287,7 @@ class AuthProvider with ChangeNotifier {
     try {
       final Uri uri = Uri.https('maps.googleapis.com', '/maps/api/place/textsearch/json', {
         'query': pattern,
-        "key": 'AIzaSyDEKfdpKpYv_225JHEtLhJyra5qEmPp-1A',
+        "key": 'secret_key',
       });
       final response = await http.get(uri);
       final decodentResponse = json.decode(response.body);
