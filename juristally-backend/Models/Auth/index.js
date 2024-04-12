@@ -1,0 +1,50 @@
+const mongoose = require("mongoose");
+
+const usersSchema = new mongoose.Schema({
+    _id: mongoose.Schema.Types.ObjectId,
+    sm_uid: { type: String, default: null },
+    full_name: { type: String, default: null },
+    type: { type: String, default: null }, //type will be lawyer/hr/normal_user
+    gender: { type: String, default: null },
+    contact_number: { type: Number, default: null },
+    contact_verified: { type: Boolean, default: false },
+    email: { type: String, default: null },
+    email_verified: { type: Boolean, default: false },
+    password: { type: String, default: null },
+    salt_value: { type: String, default: null },
+    cover_image: { type: String, default: null },
+    profile_image: { type: String, default: null },
+    practice_area: [{ type: String, ref: "Laws" }],
+    designation: { type: String, default: null },
+    about: { type: String, default: null },
+    location: { type: Object, default: null },
+    id_card_number: { type: String, default: null },
+    id_card: { type: String, default: null },
+    company_id: { type: String, default: null },
+    company_id_card: { type: String, default: null },
+    registration_card: { type: String, default: null },
+    registration_number: { type: String, default: null },
+    bar_council_number: { type: String, default: null },
+    bar_council_card: { type: String, default: null },
+    education: [{ type: String, ref: "Education" }], //references with educations
+    experience: [{ type: String, ref: "Experience" }],
+    follow_requests: [{ type: String, ref: "Users" }],
+    sent_follow_requests: [{ type: String, ref: "Users" }],
+    followers: [{ type: String, ref: "Users" }],
+    queries: [{ type: String, ref: 'UserQuery' }],
+    pages: [{ type: String, ref: 'Pages' }],
+    posts: [{ type: String, ref: "Posts" }],
+    groups: [{ type: String, ref: "Groups" }],
+    accept_terms: { type: Boolean, default: false },
+    ratings: { type: String, default: null, ref: 'Ratings' },
+    is_in_trial: { type: Boolean, default: false },
+    is_trial_done: { type: Boolean, default: false },
+    subscription: { type: String, default: null, ref: 'Subscriptions' },
+    sign_in_method: { type: String, default: null },
+    current_firm: { type: String, default: null, ref: "Firm" },
+    referral_code: { type: String, default: null },
+    created_at: { type: Date, default: Date.now },
+    updated_at: { type: Date, default: Date.now }
+});
+
+module.exports = mongoose.model("Users", usersSchema);
